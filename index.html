@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>"umigame_san"</title>
+    <style>
+        /* Style the menu bar */
+        .menu-bar {
+            background-color: greenyellow;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+        /* Style the menu items */
+        .menu-item {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        /* Style the links */
+        .menu-item a {
+            text-decoration: none;
+            color: #403f3e;
+        }
+        /* Style the hero section */
+        .hero {
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Style the video element */
+        video {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        /* Style the pop-up menu */
+        .pop-up-menu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background-color: white;
+            padding: 10px;
+        }
+        
+        /* Show the pop-up menu on hover */
+        .menu-item:hover .pop-up-menu {
+            display: block;
+        }
+        /* Responsive design */
+        @media (max-width: 767px) {
+            .menu-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-item {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body style="margin:0;">
+    <div class="menu-bar">
+        <img src="/Users/suyamatakeru/Downloads/docker/codeGPT_homepage/top.svg" alt="umigame_san">
+        <div class="menu-item">
+            <a href="https://nd-phenix60.vercel.app/">Works</a>
+        </div>
+        <div class="menu-item">
+            <a href="#">Researches</a>
+            <div class="pop-up-menu">
+                <div class="menu-item">menu1</div>
+                <div class="menu-item">menu2</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Contacts</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1 style="text-align: center;">Welcome to umigame_san</h1>
+        <video autoplay loop muted>
+            <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023 Your Company Name</p>
+    </footer>
+</body>
+</html>
